@@ -87,6 +87,14 @@ Enter same passphrase again: 再次输入密码
 
 
 
+**建立本机与远程仓库的联系**
+
+先查看一下是否与远程仓库有联系	` git remote -v `
+
+添加远程仓库，先复制远程仓库的ssh，然后` git remote add +ssh`
+
+
+
 ## 命令行
 
 * **git log** 查看提交日志
