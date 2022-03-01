@@ -65,7 +65,7 @@ using namespace std;
 bool NextJam(char *jam,int s,int t,int w){
     int i=w-1;                    
     char ins=jam[i]+1;//用于插入或者比较的下一位字符
-    bool ifexit=false;
+    bool ifexist=false;
     while(ins-96>=s){
         //若超出范围
         if(ins-96>t||ins-96<s){
@@ -86,10 +86,10 @@ bool NextJam(char *jam,int s,int t,int w){
             jam[pos]=ins;
             ins++;
         } 
-        ifexit=true;	//存在下一个数
+        ifexist=true;	//存在下一个数
         break;
     }
-	return ifexit;
+	return ifexist;
 }	
 
 int main(){
